@@ -122,7 +122,6 @@ img {
   max-width: 300px;
   border-radius: 10px;
   max-height: fit-content;
- 
 }
 .testimonial-container {
   display: grid;
@@ -133,11 +132,45 @@ img {
   width: 700px;
   margin-bottom: 40px;
 }
-
 .testimonail-content p:nth-child(2) {
   font-weight: bold;
   margin-top: 30px;
 }
+
+/* Pricing */
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 50px;
+}
+.pricing .plan {
+  padding: 20px;
+  border-radius: 10px;
+  max-height: fit-content;
+}
+.pricing .plan-subheading {
+  margin-bottom: 30px;
+}
+.pricing .plan-pricing {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+.pricing .list-features ul {
+  margin: 30px 0;
+}
+.pricing .list-features ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.pricing .list-features ul li i {
+  margin-right: 10px;
+}
+.pricing .pricing-footer {
+  margin: 30px 0;
+}
+
 /* Utility Classes */
 /* Conatiners */
 .container {
@@ -164,6 +197,7 @@ img {
   border-radius: 10px;
   cursor: pointer;
   transition: 0.5s;
+  text-align: center;
 }
 
 .btn:hover {
