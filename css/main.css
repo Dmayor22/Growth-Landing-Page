@@ -175,30 +175,54 @@ img {
 .faq {
   padding: 30px 0;
 }
-.faq-menu {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  background-color: #fff;
+.faq-group {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
 }
-.faq-menu li {
-  cursor: pointer;
-  background-color: #f4f4f6;
-  padding: 10px;
-  border-radius: 6px;
-  font-weight: bold;
-}
-.faq-menu .active {
-  background-color: #4891ff;
-  color: #fff;
-}
-
-.faq-group-header {
+ul.faq-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
+  background-color: #ddd;
+  max-width: 400px;
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.faq-menu li {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+}
+.faq-menu li.active {
+  background-color: var(--primary);
+  color: #fff;
+}
+.faq-group-header {
+  padding: 20px 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+.faq-group-header h4 {
+  font-weight: 600;
+  width: 95%;
+}
+.faq-group-header i {
+  position: absolute;
+  right: 0;
+  top: 43px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.faq-group-body {
+  display: none;
+}
+.faq-group-body.open {
+  display: block;
 }
 
 /* Utility Classes */
